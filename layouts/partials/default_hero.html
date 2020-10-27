@@ -1,0 +1,27 @@
+<section class="hero {{ .Scratch.Get "hero.classNames"}} has-text-centered has-background-image">
+  <!-- Hero head: will stick at the top -->
+  <!-- <div class="hero-head">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+          </a>
+        </div>
+      </div>
+    </header>
+  </div> -->
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title has-text-white">
+        {{ .Params.Title }}
+      </h1>
+      <h2 class="subtitle has-text-white">
+        {{ with .Params.description }}
+          {{ . }}
+        {{end}}
+      </h2>
+    </div>
+  </div>
+</section>

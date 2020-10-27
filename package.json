@@ -1,0 +1,37 @@
+{
+  "name": "quickstart",
+  "version": "1.0.0",
+  "main": "./styles/scss/github-md.scss",
+  "author": "jiben2",
+  "license": "MIT",
+  "scripts": {
+    "pack": "webpack",
+    "start:dev": "webpack-dev-server",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "autoprefixer": "^9.1.3",
+    "babel-loader": "^8.1.0",
+    "bulma": "^0.8.2",
+    "bulma-dashboard": "^0.3.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "netlify-cli": "^2.66.0",
+    "netlify-cms-app": "^2.13.1",
+    "node-sass": "^4.9.3",
+    "postcss-cli": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "stimulus": "^1.1.1",
+    "turbolinks": "^5.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

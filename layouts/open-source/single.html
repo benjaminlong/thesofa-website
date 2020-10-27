@@ -1,0 +1,19 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "nav"}}
+  {{ partial "default_topnav.html" . }}
+{{end}}
+
+{{ define "hero" }}
+  {{ .Scratch.Set "hero.classNames" "is-small is-primary is-bold" }}
+  {{partial "default_hero.html" . }}
+{{end}}
+
+
+{{ define "main" }}
+  <div class="markdown-body">
+    {{.Content}}
+  </div>
+{{ end }}

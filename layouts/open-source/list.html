@@ -1,0 +1,65 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "nav"}}
+  {{ partial "default_topnav.html" . }}
+{{end}}
+
+{{ define "hero" }}
+  {{ .Scratch.Set "hero.classNames" "is-primary is-bold" }}
+  {{partial "default_hero.html" . }}
+{{end}}
+
+
+{{ define "main" }}
+  <h3 class="title is-3">Web Framework</h3>
+  <div class="columns is-mobile is-multiline">
+    {{ range where .Pages ".Params.categories" "intersect" (slice "Web Framework") }}
+      <a class="column is-6 is-3-desktop" href="{{ .Permalink }}">
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="{{ .Params.thumbnail }}" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">{{ .Title }}</p>
+                <p class="subtitle is-6">{{ .Summary }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+
+  <h3 class="title is-3">Javascript</h3>
+  <div class="columns is-mobile is-multiline">
+    {{ range where .Pages ".Params.categories" "intersect" (slice "Js Framework" "Js Library") }}
+      <a class="column is-6 is-3-desktop" href="{{ .Permalink }}">
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="{{ .Params.thumbnail }}" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">{{ .Title }}</p>
+                <p class="subtitle is-6">{{ .Summary }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+
+  <div class="markdown-body">
+    {{.Content}}
+  </div>
+{{ end }}
