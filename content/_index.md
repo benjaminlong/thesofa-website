@@ -1,9 +1,8 @@
 ---
-title: "The Sofa's Lab"
-description: "Ideas and Education About Software"
-heroBackgroundImage: "/images/lacanau-view.jpg"
+title: The Sofa's Lab
+description: Ideas and Education About Software
+heroBackgroundImage: /images/lacanau-view.jpg
 ---
-
 ## Welcome to the TheSofa's Lab
 
 The Sofa’s Lab is focused on making technology more accessible, teaching technology topics, and focusing the use of technology on the betterment of society. At the lab we believe that the world is multi-disciplinary. That the best version of the future is built by a wide variety of people with different skills, backgrounds, and ideologies. I am always searching for connections between the sciences, the humanities, law, politics, and all of the other threads that tie humanity together.
@@ -14,16 +13,10 @@ Enjoy, and never stop learning.
 
 –Jiben2
 
-<!-- === "Tab 1"
-    Markdown **content**.
+More Markdown \*\*content\*\*.
 
-    Multiple paragraphs.
-
-=== "Tab 2"
-    More Markdown **content**.
-
-    - list item a
-    - list item b
+- list item a
+- list item b
 
 
 # Our expertise
@@ -32,4 +25,4 @@ Write about section
 
 | Test | Test 2 |
 |------|--------|
-|Hello|Toto| -->
+|Hello|Toto|
