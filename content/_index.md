@@ -1,7 +1,7 @@
 ---
-title: "The Sofa's Lab"
-description: "Ideas and Education About Software"
-heroBackgroundImage: "/images/lacanau-view.jpg"
+title: The Sofa's Lab
+description: Ideas and Education About Software
+heroBackgroundImage: /images/lacanau-view.jpg
 ---
 
 ## Welcome to the TheSofa's Lab
