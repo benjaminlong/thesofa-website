@@ -1,6 +1,7 @@
 ---
 title: Contact us
-intro:
+intro: null
+form: "{{< form-contact-us >}}"
 team: []
 ---
 
