@@ -2,9 +2,8 @@
 .idea/
 #docs/
 
-nom_backoffice/_static/bulma/sass/
-nom_backoffice/_static/bulma/css/
-nom_backoffice/_static/bulma/bulma.sass
+src/css/
+src/fonts/
 
 ### Python template
 # Byte-compiled / optimized / DLL files
@@ -345,5 +344,3 @@ pip-selfcheck.json
 nom_backoffice/_media/
 
 .pytest_cache/
-
-

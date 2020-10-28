@@ -1,4 +1,5 @@
 var path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
    // entry: {
@@ -7,6 +8,7 @@ module.exports = {
    // },
    entry: {
      css: './styles/scss/app.scss',
+     cms: path.join(__dirname, "src", "js", "cms.js"),
    },
    output: {
       path: path.resolve(__dirname, 'static'),
@@ -18,10 +20,13 @@ module.exports = {
       rules: [
         {
           test: /\.js$/,
-          include: path.resolve(__dirname, 'assets'),
+          // include: path.resolve(__dirname, 'assets'),
+          exclude: /node_modules/,
           loader: 'babel-loader',
           query: {
-             presets: ["@babel/preset-env"]
+             presets: ["@babel/preset-env", "@babel/preset-react"],
+             plugins: ["@babel/plugin-syntax-object-rest-spread",
+                       "@babel/plugin-proposal-object-rest-spread"]
           }
        },
        {
@@ -48,5 +53,24 @@ module.exports = {
           ]
         }
       ]
-   }
+   },
+   plugins: [
+    // new AssetsPlugin({
+    //   filename: "webpack.json",
+    //   path: path.join(process.cwd(), "site/data"),
+    //   prettyPrint: true
+    // }),
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: "./src/fonts/",
+    //     to: "fonts/",
+    //     flatten: true
+    //   }
+    // ]),
+    // new HtmlWebpackPlugin({
+    //   filename: 'admin/index.html',
+    //   template: 'src/cms.html',
+    //   inject: false,
+    // }),
+  ]
 };

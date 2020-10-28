@@ -7,25 +7,28 @@
 {{end}}
 
 {{ define "hero" }}
-  {{ .Scratch.Set "hero.classNames" "is-primary is-bold" }}
-  {{partial "default_hero.html" . }}
+  <!-- {{ .Scratch.Set "hero.classNames" "is-primary is-bold" }} -->
+  {{ if .Params.hero }}
+    {{partial "default_hero.html" . }}
+  {{ end }}
 {{end}}
 
 {{ define "main" }}
-  {{ partial "breadcrumbs.html" . }}
+  <!-- {{ partial "breadcrumbs.html" . }} -->
 
   <div class="columns">
     <div class="column">
       <div class="markdown-body">
+        {{ .Params.intro }}
         {{ .Content }}
       </div>
     </div>
-    {{ if .TableOfContents }}
+    <!-- {{ if .TableOfContents }}
       <div class="column is-2 table-of-content">
         <h3 class="title is-5">Sur cette page</h3>
         {{ .TableOfContents }}
       </div>
-    {{ end}}
+    {{ end}} -->
   </div>
 
 {{ end }}

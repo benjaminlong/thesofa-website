@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello World on The Sofa</title>
+    <link>https://www.thesofa.fr/portfolio/toto/</link>
+    <description>Recent content in Hello World on The Sofa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.thesofa.fr/portfolio/toto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

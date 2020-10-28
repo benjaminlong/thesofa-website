@@ -5,7 +5,7 @@ form: "{{< form-contact-us >}}"
 team: []
 ---
 
-<form name="contact" data-netlify="true" netlify>
+<!-- <form name="contact" data-netlify="true" netlify>
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
@@ -18,4 +18,4 @@ team: []
   <p>
     <button type="submit">Send</button>
   </p>
-</form>
+</form> -->

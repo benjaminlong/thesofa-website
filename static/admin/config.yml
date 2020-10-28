@@ -10,19 +10,34 @@ collections:
     label: "/"
     files:
       - label: "Home"
-        name: "Home"
+        name: "home"
         create: true
         file: "content/_index.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Body, name: body, widget: markdown}
-      - label: "About Page"
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: color
+                name: color
+                widget: select
+                options: ["is-primary", 'is-light']
+              - label: size
+                name: size
+                widget: select
+                options: ["is-fullheight", "is-small", "is-medium"]
+              - {label: backgroundImage, name: backgroundImage, widget: file}
+              - {label: footer, name: footer, widget: boolean}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: "About"
         name: "about"
         create: true
-        file: "content/about.yml"
+        file: "content/about.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Form, name: form, widget: markdown}
           - label: Team
             name: team
             widget: list
@@ -30,19 +45,6 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
-        name: "locations"
-        file: "content/locations.yml"
-        create: true
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
   - name: 'posts'
     label: 'Posts'
     folder: 'content/posts'
@@ -51,9 +53,9 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
   - name: 'portfolio'
     label: 'Portfolio'
     label_singular: 'Project'
@@ -72,3 +74,20 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Summary', name: 'summary', widget: 'string' }
+      - label: Hero
+        name: hero
+        widget: "object"
+        collapsed: true
+        fields:
+          - label: size
+            name: size
+            widget: select
+            options: ["is-fullheight", "is-small", "is-medium"]
+          - label: color
+            name: color
+            widget: select
+            options: ["is-primary", "is-light", 'is-dark']
+          - {label: backgroundImage, name: backgroundImage, widget: file}
+          - {label: footer, name: footer, widget: boolean, default: false, required: false}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
