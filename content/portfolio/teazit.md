@@ -1,4 +1,0 @@
----
-title: "Teazit"
-description: ""
----
