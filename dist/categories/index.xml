@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on The Sofa</title>
+    <link>https://www.thesofa.fr/categories/</link>
+    <description>Recent content in Categories on The Sofa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.thesofa.fr/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS Library</title>
+      <link>https://www.thesofa.fr/categories/css-library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/categories/css-library/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Js Framework</title>
+      <link>https://www.thesofa.fr/categories/js-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/categories/js-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Js Library</title>
+      <link>https://www.thesofa.fr/categories/js-library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/categories/js-library/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Framework</title>
+      <link>https://www.thesofa.fr/categories/web-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/categories/web-framework/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

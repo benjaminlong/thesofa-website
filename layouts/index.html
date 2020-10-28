@@ -3,47 +3,7 @@
 {{end}}
 
 {{ define "hero" }}
-<section class="hero is-info is-bold has-text-centered has-background-image">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <header class="navbar">
-        {{ partial "default_topnav.html" . }}
-      </header>
-    </div>
-
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title has-text-white">
-          {{ .Params.Title }}
-        </h1>
-        <h2 class="subtitle has-text-white">
-          {{ with .Params.description }}
-            {{ . }}
-          {{end}}
-        </h2>
-
-        <!-- <div class="buttons is-centered">
-          <a class="button is-info" href="/portfolio/">
-            Porfolio
-          </a>
-          <a class="button is-info" href="#our-expertise">
-            Our expertise
-          </a>
-        </div> -->
-      </div>
-    </div>
-
-    <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot has-text-white"
-         style="z-index: 1">
-      <div class="">
-        <a href="#about" class="icon has-text-white">
-          <i class="fa fa-angle-down fa-3x"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+  {{partial "default_hero.html" .}}
 {{end}}
 
 {{ define "main" }}

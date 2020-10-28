@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Sofa&#39;s Lab on The Sofa</title>
+    <link>https://www.thesofa.fr/</link>
+    <description>Recent content in The Sofa&#39;s Lab on The Sofa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.thesofa.fr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bulma</title>
+      <link>https://www.thesofa.fr/open-source/bulma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/open-source/bulma/</guid>
+      <description>Bulma summary</description>
+    </item>
+    
+    <item>
+      <title>Contact us</title>
+      <link>https://www.thesofa.fr/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/about/</guid>
+      <description> Your Name:   Your Email:   Message:   Send  -- </description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://www.thesofa.fr/open-source/django/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/open-source/django/</guid>
+      <description>django summary</description>
+    </item>
+    
+    <item>
+      <title>Ember.js</title>
+      <link>https://www.thesofa.fr/open-source/ember-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/open-source/ember-js/</guid>
+      <description>Ember.js summary</description>
+    </item>
+    
+    <item>
+      <title>Stimulus JS</title>
+      <link>https://www.thesofa.fr/open-source/stimulus-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/open-source/stimulus-js/</guid>
+      <description>Stimulus JS summary</description>
+    </item>
+    
+    <item>
+      <title>toto</title>
+      <link>https://www.thesofa.fr/posts/toto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesofa.fr/posts/toto/</guid>
+      <description> Hello </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,4 +7,7 @@ categories:
 - Web Framework
 tags:
 - Framework
+hero:
+  backgroundImage: /images/uploads/lacanau-view.jpg
+  classNames: is-primary has-text-centered
 ---
